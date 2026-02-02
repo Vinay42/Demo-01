@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev:admin": "copy .env.admin .env.local && next dev",
+    "dev:test": "copy .env.test .env.local && next dev",
+    "build:admin": "copy .env.admin .env.production && next build",
+    "build:test": "copy .env.test .env.production && next build",
     "start": "next start",
     "lint": "eslint"
   },

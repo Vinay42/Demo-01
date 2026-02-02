@@ -1,0 +1,4 @@
+export const APP_FEATURES = {
+  ADMIN: ["DASHBOARD", "USERS", "PAYMENTS"],
+  TEST: ["DASHBOARD", "USERS"],
+};
